@@ -12,11 +12,11 @@ namespace Task5
         {
             Console.WriteLine("Введите размер массива NxN");
             int n = Convert.ToInt32(Console.ReadLine());
-            int[,] array = new int[n,n];
+            int[,] array = new int[n, n];
             Random random = new Random();
             for(int i = 0; i < n; i++) {
                 for(int j = 0; j < n; j++) {
-                    if(((i+j)%2)==0) {
+                    if(((i + j) % 2) == 0) {
                         array[i, j] = 1;
                     }
                     else {
